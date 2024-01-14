@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/userprofileborder"
+    android:gravity="center_vertical"
+    android:backgroundTint="@color/white"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/userImageUserProfileScreenRow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher_background">
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userNameTxtUserProfileScreenRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ramazan Tiftik"
+                android:textColor="#333333"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/majorTxtUserProfileScreenRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/montserratregular"
+                android:layout_marginTop="3dp"
+                android:text="Akdeniz Üniversitesi"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/postTextUserProfileScreenRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="sdopsdopfkhosdhıhjfhdhjıodsjhdsgkopskgopsdfkhoıkdsfıohkdsıohıodsfıhjdsoıhjdsfohdsjhdsfıo"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/postImageUserProfileScreenRow"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_launcher_background"></ImageView>
+
+
+</LinearLayout>

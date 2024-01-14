@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.startpages.UserActiveScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+
+        <EditText
+            android:id="@+id/activeCodeEditTxtActiveSc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activeCodeTxtActiveSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doğrulama Kodu:"
+            android:textColor="#F2F2F2"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/activeCodeEditTxtActiveSc"
+            app:layout_constraintStart_toStartOf="@+id/activeCodeEditTxtActiveSc" />
+
+        <TextView
+            android:id="@+id/titleTxtActiveSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Aktif Et"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="20sp"
+            android:layout_marginBottom="70dp"
+            android:textColor="#F2F2F2"
+            app:layout_constraintBottom_toTopOf="@+id/activeCodeEditTxtActiveSc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/backBtnActiveSc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/backbtn"
+            app:layout_constraintStart_toStartOf="@+id/activeCodeEditTxtActiveSc"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/activeBtnActiveSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hesabı Aktif Et"
+            android:layout_marginTop="40dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/montserratregular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activeCodeEditTxtActiveSc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

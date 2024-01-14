@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.detailpages.NewPostScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFeedScreen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7032FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/mainScreenTxtNewPostSc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="2dp"
+                android:layout_marginTop="20dp"
+                android:text="Yeni Gönderi Ekle"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="#F2F2F2"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/photoImageViewNewPostSc"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#7032FF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.20" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.40" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.60" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.80" />
+
+
+            <ImageView
+                android:id="@+id/homePageBtnNewPostSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/homepagebtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                />
+
+            <ImageView
+                android:id="@+id/announcementBtnNewPostSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/announcement"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintEnd_toStartOf="@id/guideline2" />
+
+            <ImageView
+                android:id="@+id/cvBtnNewPostSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/cvbtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline2"
+                app:layout_constraintEnd_toStartOf="@id/guideline3" />
+
+            <ImageView
+                android:id="@+id/profileBtnNewPostSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/profilebtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline3"
+                app:layout_constraintEnd_toStartOf="@id/guideline4" />
+
+            <ImageView
+                android:id="@+id/messagesNewPostSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/messagebtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="#F2F2F2"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFeedScreen">
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:id="@+id/addPhotoLinearLayoutNewPostSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:id="@+id/addPhotoBtnNewPostSc"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_launcher_background"></ImageView>
+
+                    <TextView
+                        android:id="@+id/staticTxtNewPostSc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Bir Fotoğraf Ekle"
+                        android:fontFamily="@font/montserratregular"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginRight="15dp"></TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/static2TxtNewPostSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratregular"
+                    android:textSize="11sp"
+                    android:layout_marginTop="5dp"
+                    android:text="Desteklenen Formatlar JPG, PNG, JPEG"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/white"
+                android:layout_margin="30dp">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                <EditText
+                    android:id="@+id/postEditTxtNewPostSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:hint="Bir Metin Girin..."
+                    android:background="@drawable/border"
+                    android:backgroundTint="@color/white"
+                    android:textSize="13sp"
+                    android:padding="5dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="top"></EditText>
+
+                </androidx.core.widget.NestedScrollView>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addPostBtnNewPostSc"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:textAllCaps="false"
+                android:textSize="11sp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_rounded"
+                android:text="Gönderi Yayınlama Talebi Oluştur"
+                android:fontFamily="@font/montserratregular"/>
+
+            <TextView
+                android:id="@+id/static3TxtNewPostSc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:layout_marginRight="30dp"
+                android:text="**Gönderiniz adminlerimiz tarafından incelenip onayşandıktan sonra ana sayfada görntülenecektir."></TextView>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>

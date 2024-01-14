@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1060632945337",
+    "firebase_url": "https://akdenizcv-24f75-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "akdenizcv-24f75",
+    "storage_bucket": "akdenizcv-24f75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060632945337:android:e073410186719473927168",
+        "android_client_info": {
+          "package_name": "com.ramazantiftik.akdenizcv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG6fZIc-Tu-uKkc4-7qAjXEiyADSha_1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060632945337:android:4ab90fde080f8c96927168",
+        "android_client_info": {
+          "package_name": "eren.dagli.akdenizcv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG6fZIc-Tu-uKkc4-7qAjXEiyADSha_1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

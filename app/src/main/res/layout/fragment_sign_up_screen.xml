@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.startpages.SignInScreen">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutSignUpSc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+
+        <ImageView
+            android:id="@+id/imageLogoSignUpSc"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userEmailTxtSignUpScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserratregular"
+            android:padding="2dp"
+            android:text="Mail Adresi:"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/userEmailEditTxtSignUpSc"
+            app:layout_constraintTop_toBottomOf="@+id/imageLogoSignUpSc" />
+
+        <TextView
+            android:id="@+id/userPasswordTxtSignUpSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserratregular"
+            android:padding="2dp"
+            android:text="Şifre:"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/userPasswordEditTxtSignUpSc"
+            app:layout_constraintTop_toBottomOf="@+id/userEmailEditTxtSignUpSc" />
+
+        <TextView
+            android:id="@+id/userPasswordTxtSignUpSc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratregular"
+            android:padding="2dp"
+            android:text="Şifreyi Doğrulayın:"
+            android:layout_marginTop="15dp"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/userPasswordEditTxtSignUpSc"
+            app:layout_constraintTop_toBottomOf="@+id/userPasswordEditTxtSignUpSc" />
+
+        <EditText
+            android:id="@+id/userEmailEditTxtSignUpSc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:backgroundTint="#F2F2F2"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userEmailTxtSignUpScreen" />
+
+        <EditText
+            android:id="@+id/userPasswordEditTxtSignUpSc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#F2F2F2"
+            android:ems="10"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPasswordTxtSignUpSc" />
+
+        <EditText
+            android:id="@+id/userPasswordEditTxtSignUpSc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#F2F2F2"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPasswordTxtSignUpSc2" />
+
+        <TextView
+            android:id="@+id/privacyPolicyTxtSignUpSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gizlilik Politikası"
+            android:textColor="#F2F2F2"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="16sp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/signUpBtnSignUpSc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratregular"
+            android:text="Giriş Yap"
+            android:layout_marginTop="90dp"
+            android:textAllCaps="false"
+            android:textColor="#F2F2F2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPasswordEditTxtSignUpSc2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

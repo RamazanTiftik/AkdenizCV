@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.startpages.SignInScreen">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutSignInSc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+
+        <ImageView
+            android:id="@+id/imageLogoSignInSc"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userEmailTxtSignInScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserratregular"
+            android:padding="2dp"
+            android:text="Mail Adresi:"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/userEmailEditTxtSignInSc"
+            app:layout_constraintTop_toBottomOf="@+id/imageLogoSignInSc" />
+
+        <TextView
+            android:id="@+id/userPasswordTxtSignInSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserratregular"
+            android:padding="2dp"
+            android:text="Şifre:"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/userPasswordEditTxtSignInSc"
+            app:layout_constraintTop_toBottomOf="@+id/userEmailEditTxtSignInSc" />
+
+        <EditText
+            android:id="@+id/userEmailEditTxtSignInSc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:backgroundTint="#F2F2F2"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userEmailTxtSignInScreen" />
+
+        <EditText
+            android:id="@+id/userPasswordEditTxtSignInSc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#F2F2F2"
+            android:ems="10"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPasswordTxtSignInSc" />
+
+        <CheckBox
+            android:id="@+id/rememberMeChckBoxSignInSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserratregular"
+            android:text="Beni Hatırla"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/userPasswordEditTxtSignInSc"
+            app:layout_constraintTop_toBottomOf="@+id/userPasswordEditTxtSignInSc" />
+
+        <TextView
+            android:id="@+id/dontRemeberPasswordTxtSignInSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/montserratregular"
+            android:text="Şifreni mi Unutun?"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/userPasswordEditTxtSignInSc"
+            app:layout_constraintTop_toBottomOf="@+id/userPasswordEditTxtSignInSc" />
+
+        <TextView
+            android:id="@+id/userActiveTxtSignInSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Hesabını Aktive Et"
+            android:textColor="#F2F2F2"
+            android:clickable="true"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signInBtnSignInSc" />
+
+        <TextView
+            android:id="@+id/privacyPolicyTxtSignInSc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gizlilik Politikası"
+            android:textColor="#F2F2F2"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="16sp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signInBtnSignInSc"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:text="Giriş Yap"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/montserratregular"
+            android:layout_marginTop="90dp"
+            android:textColor="#F2F2F2"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPasswordEditTxtSignInSc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

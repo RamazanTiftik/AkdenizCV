@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.mainpages.UserCvScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F2F2">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#7032FF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.20" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.40" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.60" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.80" />
+
+
+            <ImageView
+                android:id="@+id/homePageBtnUserCvSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/homepagebtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                />
+
+            <ImageView
+                android:id="@+id/announcementBtnUserCvSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/announcement"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintEnd_toStartOf="@id/guideline2" />
+
+            <ImageView
+                android:id="@+id/cvBtnUserCvSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/cvbtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline2"
+                app:layout_constraintEnd_toStartOf="@id/guideline3" />
+
+            <ImageView
+                android:id="@+id/profileBtnUserCvSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/profilebtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline3"
+                app:layout_constraintEnd_toStartOf="@id/guideline4" />
+
+            <ImageView
+                android:id="@+id/messagesUserCvSc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/messagebtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutCvScreen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7032FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/userProfileTxtUserCvSc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/montserratregular"
+                android:padding="2dp"
+                android:layout_marginTop="20dp"
+                android:text="CV"
+                android:textColor="#F2F2F2"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/photoImageViewCvSc"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutCvScreen">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/userprofileborder"
+                    android:backgroundTint="@color/white"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayoutCvScreen">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#F2F2F2">
+
+                        <ImageView
+                            android:id="@+id/userPhotoImageViewCvSc"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/ic_launcher_background"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/userNameTxtUserCvSc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserratbold"
+                                android:text="Ramazan Tiftik"
+                                android:textColor="#333333"
+                                android:textSize="16sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/majorTxtUserCvSc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="@font/montserratregular"
+                                android:text="Akdeniz Üniversitesi"
+                                android:textSize="14sp"></TextView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/staticTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Hakkımda"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#333333"
+                    android:textSize="18sp"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+                    android:backgroundTint="@color/white"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/summaryEditTxtUserCvSc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_margin="7dp"
+                            android:background="@drawable/border"
+                            android:backgroundTint="@color/white"
+                            android:fontFamily="@font/montserratregular"
+                            android:gravity="top"
+                            android:text=""
+                            android:padding="5dp"
+                            android:textSize="14sp"></EditText>
+
+                    </androidx.core.widget.NestedScrollView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/userStatic25TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Ad ve Soyadı:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userNameEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/userStatic20TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Email:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userEmailEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/userStatic21TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Cep Telefonu:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userPhoneEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static4TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="LinkedIn:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userLinkedInEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static5TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Github:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userGithubEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static6TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="İkamet Adresi:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userAddressEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static7TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Doğum Tarihi:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userBirthDateEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static8TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Üniversite:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userUniversityEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static10TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="İş Pozisyonu / Staj:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userPositionEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static11TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Programlama Dilleri:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userProgramingEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static12TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Office Programları:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userOfficeEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static13TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Diğer Yetenekler:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userOthersEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static14TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Sosyal Katılımlar:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userSocialEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static15TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Yabancı Dil:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userLanguageEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static16TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Alınan Kurslar:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userCourseEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static17TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Professional:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userProfessionalEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static18TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Hobiler:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userHobbyEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <TextView
+                    android:id="@+id/static19TxtUserCvSc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:padding="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Referanslar:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userReferenceEditTxtUserCvSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"></EditText>
+
+                <Button
+                    android:id="@+id/saveBtnUserCvSc"
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:text="Kaydet"
+                    android:background="@drawable/button_rounded"
+                    android:layout_marginBottom="40dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserratregular"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

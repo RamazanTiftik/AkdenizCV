@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInScreen">
+
+    <fragment
+        android:id="@+id/signInScreen"
+        android:name="com.ramazantiftik.akdenizcv.view.startpages.SignInScreen"
+        android:label="fragment_sign_in_screen"
+        tools:layout="@layout/fragment_sign_in_screen" >
+        <action
+            android:id="@+id/action_signInScreen_to_feedScreen"
+            app:destination="@id/feedScreen" />
+        <action
+            android:id="@+id/action_signInScreen_to_userActiveScreen"
+            app:destination="@id/userActiveScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedScreen"
+        android:name="com.ramazantiftik.akdenizcv.view.mainpages.FeedScreen"
+        android:label="fragment_feed_screen"
+        tools:layout="@layout/fragment_feed_screen" >
+        <action
+            android:id="@+id/action_feedScreen_to_newPostScreen"
+            app:destination="@id/newPostScreen" />
+        <action
+            android:id="@+id/action_feedScreen_to_postDetailScreen"
+            app:destination="@id/postDetailScreen" />
+        <action
+            android:id="@+id/action_feedScreen_to_userProfileScreen"
+            app:destination="@id/userProfileScreen" />
+        <action
+            android:id="@+id/action_feedScreen_to_userCvScreen"
+            app:destination="@id/userCvScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPostScreen"
+        android:name="com.ramazantiftik.akdenizcv.view.detailpages.NewPostScreen"
+        android:label="fragment_new_post_screen"
+        tools:layout="@layout/fragment_new_post_screen" >
+        <action
+            android:id="@+id/action_newPostScreen_to_userProfileScreen"
+            app:destination="@id/userProfileScreen" />
+        <action
+            android:id="@+id/action_newPostScreen_to_feedScreen"
+            app:destination="@id/feedScreen" />
+        <action
+            android:id="@+id/action_newPostScreen_to_userCvScreen"
+            app:destination="@id/userCvScreen" />
+        <action
+            android:id="@+id/action_newPostScreen_to_userCvScreen2"
+            app:destination="@id/userCvScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/postDetailScreen"
+        android:name="com.ramazantiftik.akdenizcv.view.detailpages.PostDetailScreen"
+        android:label="fragment_post_detail_screen"
+        tools:layout="@layout/fragment_post_detail_screen" >
+        <action
+            android:id="@+id/action_postDetailScreen_to_feedScreen"
+            app:destination="@id/feedScreen" />
+        <action
+            android:id="@+id/action_postDetailScreen_to_userProfileScreen"
+            app:destination="@id/userProfileScreen" />
+        <action
+            android:id="@+id/action_postDetailScreen_to_userCvScreen"
+            app:destination="@id/userCvScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileScreen"
+        android:name="com.ramazantiftik.akdenizcv.view.mainpages.UserProfileScreen"
+        android:label="fragment_user_profile_screen"
+        tools:layout="@layout/fragment_user_profile_screen" >
+        <action
+            android:id="@+id/action_userProfileScreen_to_feedScreen"
+            app:destination="@id/feedScreen" />
+        <action
+            android:id="@+id/action_userProfileScreen_to_userCvScreen"
+            app:destination="@id/userCvScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/userCvScreen"
+        android:name="com.ramazantiftik.akdenizcv.view.mainpages.UserCvScreen"
+        android:label="fragment_user_cv_screen"
+        tools:layout="@layout/fragment_user_cv_screen" >
+        <action
+            android:id="@+id/action_userCvScreen_to_userProfileScreen"
+            app:destination="@id/userProfileScreen" />
+        <action
+            android:id="@+id/action_userCvScreen_to_feedScreen"
+            app:destination="@id/feedScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/userActiveScreen"
+        android:name="com.ramazantiftik.akdenizcv.view.startpages.UserActiveScreen"
+        android:label="fragment_user_active_screen"
+        tools:layout="@layout/fragment_user_active_screen" />
+</navigation>
